@@ -1,5 +1,21 @@
 @import "tailwindcss";
 @theme inline{
+  --color-bg: var(--clr-bg);
+
+--background-image: var(--mon-image);
+--clr-green:var(--clr-green);
+
+
+  
+}
+
+
+@layer base {
+
+  :root {
+
+  --clr-bg: var(--clr-gray-900);
+
 
   --clr-white: oklch(1 0 0);
 
@@ -11,28 +27,22 @@
   --clr-green: oklch(87.1% 0.15 154.449);
   --clr-green-300: oklch(79.2% 0.209 151.711);
 
+  --mon-image: url("/image-profile-mobile.webp");
+    
+  }
+  
+  .bg-img {
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+  }
 
-
-
-
-
+  .bg-clr {
+    background-color: var(--color-bg);
+  }
 
 }
 
 
 
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
